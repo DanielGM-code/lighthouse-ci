@@ -9,7 +9,7 @@ module.exports = {
         "http://localhost:8080/service",
       ],
     },
-    asserts: {
+    assert: {
       assertions:{
         'categories:performance': ['error', {minScore: .6}],
         'categories:accessibility': ['error', {minScore: .6}],
