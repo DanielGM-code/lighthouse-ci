@@ -18,8 +18,7 @@ module.exports = {
         'http://localhost:8080',
         'http://localhost:8080/about',
         'http://localhost:8080/service',
-      ],
-      chromePath: '/usr/bin/google-chrome',
+      ]
     },
     upload: {
       target: "temporary-public-storage",
@@ -46,7 +45,7 @@ on: [push]
 jobs:
   lhci:
     name: Lighthouse CI
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 14.x
